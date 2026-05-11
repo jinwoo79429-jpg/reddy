@@ -1,0 +1,120 @@
+:root {
+  --theme-primary-color: #C10930;
+  --theme-secondary-color: #6D081D;
+  --dark-color: #343435;
+  --theme-color: #ff0;
+}
+body {
+  background: #DFE8E9;
+  color: #444444;
+}
+body::-webkit-scrollbar-thumb,
+.sidebar::-webkit-scrollbar-thumb {
+  background-color: var(--theme-primary-color) !important;
+}
+.header {
+  box-shadow: 0px 2px 20px rgb(1 41 112 / 10%);
+  background-color: #fff !important;
+}
+.form_search .form-control:focus {
+  border-color: var(--theme-primary-color);
+  box-shadow: 0 0 0 2px var(--theme-primary-color);
+}
+a.rules {
+  background: var(--theme-primary-color);
+  border-bottom: 4px solid var(--theme-secondary-color);
+  color: #fff;
+}
+a.rules:hover {
+  color: #fff;
+  background: var(--theme-secondary-color);
+  border-bottom: 4px solid var(--theme-primary-color);
+}
+.new-middle-menus ul li a.nmm-active,
+.new-middle-menus ul li a.nmm-active:hover {
+  background: var(--theme-primary-color);
+  color: #fff;
+}
+.hightlight-menu,
+.hightlight-menu:hover {
+  background: var(--theme-secondary-color) !important;
+  color: #fff !important;
+}
+.new-middle-menus {
+  background: var(--dark-color);
+}
+.new-middle-menus ul li a {
+  border-right: 1px solid #444;
+  color: #fff;
+}
+.btn-login {
+  background: var(--dark-color);
+  border: 1px solid var(--theme-primary-color);
+  color: #fff;
+}
+.btn-login:hover {
+  background: var(--theme-secondary-color);
+  color: #fff;
+}
+.card-header,
+.card-footer {
+  border-color: var(--dark-color);
+  background-color: var(--dark-color);
+  color: #fff;
+}
+.card-title {
+  color: var(--theme-secondary-color);
+}
+.sidebar-nav .nav-link {
+  color: var(--theme-secondary-color);
+}
+.sidebar-nav .nav-link:hover {
+  color: var(--theme-primary-color);
+  background: #FFF6EE;
+}
+.sidebar-nav .nav-content {
+  background: #f6f9ff;
+}
+.sidebar-nav .nav-content a {
+  color: var(--dark-color);
+}
+.sidebar-nav .nav-content a:hover {
+  color: var(--theme-primary-color);
+}
+.list-sport-title {
+  background: var(--theme-primary-color);
+  color: #fff;
+}
+.list-sport-title:before {
+  background: linear-gradient(180deg, var(--theme-primary-color) 0, var(--theme-primary-color));
+}
+.market_section span.mrkname {
+  background: var(--theme-primary-color);
+  color: #fff;
+}
+.bet-table-header {
+  background: #e9eff8;
+}
+.swiper-button-next,
+.swiper-button-prev {
+  background-color: var(--theme-secondary-color);
+}
+.header .toggle-sidebar-btn {
+  background: var(--theme-secondary-color);
+  color: #fff;
+}
+.footer_mobilemenu {
+  border-bottom: 2px solid var(--theme-secondary-color);
+}
+.ipl-loksabha {
+  width: 100%;
+  display: none;
+}
+@media (max-width: 991px) {
+  .header {
+    background: #000 !important;
+  }
+  .header .logo img {
+    filter: none;
+  }
+}

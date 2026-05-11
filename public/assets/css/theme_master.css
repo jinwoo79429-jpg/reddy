@@ -1,0 +1,324 @@
+:root {
+    --theme-primary-color: #C10930;
+    --theme-secondary-color: #6D081D;
+    --dark-color: #343435;
+    --be-img:url('../images/inner-balexpo-red.png');
+}
+body{
+    background: #DFE8E9;
+    color: #444444;
+}
+body::-webkit-scrollbar-thumb,
+.sidebar::-webkit-scrollbar-thumb {
+  background-color: var(--theme-primary-color) !important;
+}
+.header {
+  box-shadow: 0px 2px 20px rgb(1 41 112 / 10%);
+  background-color: #fff !important;
+}
+.form_search .form-control:focus {
+  border-color: var(--theme-primary-color);
+  box-shadow: 0 0 0 2px var(--theme-primary-color);
+}
+.termslink {
+  background: var(--dark-color);
+}
+a.rules {
+  background: var(--theme-primary-color);
+  border-bottom: 4px solid var(--theme-secondary-color);
+}
+a.rules:hover {
+  color: #fff;
+  background: var(--theme-secondary-color);
+  border-bottom: 4px solid var(--theme-primary-color);
+}
+.new-middle-menus ul li a.nmm-active,
+.new-middle-menus ul li a.nmm-active:hover {
+  background: var(--theme-primary-color);
+  color: #fff;
+}
+.login-popup .login-block {
+  background: #005098;
+}
+.casino-back{
+  background: var(--theme-secondary-color) !important;
+}
+.userscreen-title {
+  background: var(--dark-color);
+}
+.hightlight-menu,
+.hightlight-menu:hover {
+  background: var(--theme-secondary-color) !important;
+}
+.new-middle-menus {
+  background: var(--dark-color);
+}
+.new-middle-menus ul li a {
+  border-right: 1px solid var(--dark-color);
+  color: #fff;
+}
+li.nav-item.expo_bal:before {
+  background: var(--be-img);
+}
+.expo_bal i {
+  color: var(--theme-primary-color);
+}
+a {
+  color: var(--theme-primary-text-color);
+}
+.signup_modal .modal-content {
+    background: var(--theme-secondary-color);
+}
+.btn-login {
+  background: var(--dark-color);
+  border: 1px solid var(--theme-primary-color);
+}
+.btn-login:hover {
+  background: var(--theme-secondary-color);
+  color: #fff;
+}
+.login-popup .banner-sec {
+  background: var(--theme-primary-color);
+}
+.login-popup .login-sec .copy-text a {
+  color: var(--theme-primary-color);
+}
+.login-popup .login-form input:focus {
+  background: var(--theme-primary-color);
+}
+.card-header,
+.card-footer {
+  border-color: var(--dark-color);
+  background-color: var(--dark-color);
+}
+.card-title {
+  color: var(--theme-secondary-color);
+}
+.accordion-flush .accordion-button:not(.collapsed) {
+  color: var(--theme-secondary-color);
+}
+.nav-tabs-bordered .nav-link:hover,
+.nav-tabs-bordered .nav-link:focus {
+  color: var(--theme-secondary-color);
+}
+.nav-tabs-bordered .nav-link.active {
+  background-color: #fbfbfb;
+  color: var(--theme-secondary-color);
+  border-bottom: 2px solid var(--theme-secondary-color);
+}
+.sidebar-nav .nav-link {
+  color: var(--theme-secondary-color);
+}
+.sidebar-nav .nav-link i {
+  color: var(--theme-secondary-color);
+}
+.sidebar-nav .nav-link:hover {
+  color: var(--theme-primary-color);
+  background: #FFF6EE;
+}
+
+.sidebar-nav .nav-link:hover i {
+  color: var(--theme-primary-color);
+}
+.sidebar-nav .nav-content a {
+  color: var(--dark-color);
+}
+.sidebar-nav .nav-content a:hover,
+.sidebar-nav .nav-content a.active {
+  color: var(--theme-primary-color);
+}
+.sidebar-nav .nav-content a.active i {
+  background-color: var(--theme-secondary-color);
+}
+.dashboard .filter .icon:hover,
+.dashboard .filter .icon:focus {
+  color: var(--theme-secondary-color);
+}
+.dashboard .sales-card .card-icon {
+  color: var(--theme-secondary-color);
+  background: #f6f6fe;
+}
+.dashboard .news h4 a:hover {
+  color: var(--theme-secondary-color);
+}
+.profile .profile-overview .card-title {
+  color: var(--theme-secondary-color);
+}
+.faq .basic h6 {
+  color: var(--theme-secondary-color);
+}
+.contact .info-box i {
+  color: var(--theme-secondary-color);
+}
+.contact .php-email-form input:focus,
+.contact .php-email-form textarea:focus {
+  border-color: var(--theme-secondary-color);
+}
+.contact .php-email-form button[type=submit] {
+  background: var(--theme-secondary-color);
+}
+.error-404 h1 {
+  color: var(--theme-secondary-color);
+}
+.footer .copyright{
+    color: var(--dark-color);
+}
+.accounts .pagination .active a,
+.accounts .pagination .active a:focus,
+.accounts .pagination .active a:hover {
+  color: #fff !important;
+  background-color: var(--theme-secondary-color) !important;
+  border: var(--theme-secondary-color) !important;
+}
+.btn-fs:hover {
+  background: var(--theme-secondary-color);
+  color: #fff;
+}
+.stack-setting input {
+  border-color: var(--theme-secondary-color);
+}
+.stack-setting button:hover {
+  background: var(--theme-primary-color);
+  border-color: var(--theme-primary-color);
+}
+
+.stack-setting .input-group-text {
+  background: var(--theme-secondary-color);
+}
+.btn-thmemes {
+  background: var(--theme-secondary-color);
+}
+
+.btn-thmemes:hover {
+  border: 1px solid var(--theme-secondary-color);
+  color: #000;
+}
+.commentary {
+  background: var(--theme-secondary-color);
+}
+.game-icons .game-bm,
+.game-icons .game-custom{
+  background: var(--theme-primary-color);
+}
+.racing_listing .rl_div{
+  background: var(--dark-color);
+}
+.game-images-box .text {
+  background-color: var(--theme-primary-color);
+}
+.swiper-button-next,
+.swiper-button-prev {
+  background-color: var(--theme-secondary-color);
+}
+.theme-bg {
+  background-color: var(--theme-primary-color);
+}
+.betslip-setting .form-control {
+  border: 1px solid var(--theme-primary-color);
+}
+.betslip-setting .input-group .input-group-text {
+  background: var(--theme-primary-color);
+}
+.betslip-setting button.btn.btn-stake {
+  border: 1px solid var(--theme-secondary-color);
+}
+.betslip-setting button.btn.btn-stake:hover {
+  background-color: var(--theme-secondary-color);
+  border: 1px solid var(--theme-secondary-color);
+  color: #fff;
+}
+.best_link{
+  background: var(--theme-primary-color);
+}
+.market_section span.mrkname {
+  background: var(--theme-primary-color);
+}
+.market_section span.mrkname:before {
+  background: linear-gradient(180deg, var(--theme-primary-color) 0, var(--theme-primary-color));
+}
+.list-sport-title {
+  background: var(--theme-primary-color);
+}
+.list-sport-title:before {
+  background: linear-gradient(180deg, var(--theme-primary-color) 0, var(--theme-primary-color));
+}
+.market_section .add-pin i {
+  color: var(--theme-primary-color);
+}
+.msgs {
+  color: var(--dark-color);
+}
+.game-rules-icon i {
+  color: var(--theme-secondary-color);
+}
+.fancy-subtabs {
+  background-color: var(--dark-color);
+}
+.fancy-subtabs .nav-link.active,
+.fancy-subtabs .nav-link:focus,
+.fancy-subtabs .nav-link:hover {
+  color: #fff;
+  background: var(--theme-secondary-color);
+}
+.new_icasino_tabs{
+  border: 1px solid var(--theme-secondary-color);
+}
+.new_icasino_tabs li:after{
+  background: var(--dark-color);
+}
+.new_icasino_tabs li a.active{
+  background: var(--dark-color);
+  color: #fff;
+}
+.bet-table-header {
+  background: #e9eff8;
+}
+.sidebar-nav .nav-content {
+  background: #f6f9ff;
+}
+.place-bet .coupon-table tr td .bet-stakes {
+  color: var(--theme-primary-color);
+}
+.place-bet .value-buttons button.btn-min-stake {
+  background: var(--theme-primary-color) !important;
+}
+.place-bet .value-buttons button.btn-max-stake {
+  background: var(--theme-secondary-color) !important;
+}
+.close-link i {
+  color: var(--theme-primary-color);
+}
+.header .toggle-sidebar-btn {
+  background: var(--theme-secondary-color);
+}
+.login-popup .login-form input {
+  background: #00427c;
+}
+.footer_mobilemenu {
+  border-bottom: 2px solid var(--theme-secondary-color);
+}
+.footer_mobilemenu a.active span {
+  color: var(--theme-secondary-color);
+}
+.footer_mobilemenu a.active i {
+  color: var(--theme-secondary-color);
+}
+typeahead-container.dropdown-menu a {
+  color: var(--theme-primary-color) !important;
+}
+typeahead-container.dropdown-menu a:hover {
+  color: var(--theme-secondary-color) !important;
+}
+@media (max-width: 991px) {
+  .header-nav .nav-profile, .expo_bal span b{
+    color: #000;
+  }
+  .expo_bal span,
+  .header-nav .nav-profile, .expo_bal span b,
+  .commentary{
+    color: #fff;
+  }
+  .header {
+    background: #000 !important;
+  }
+}

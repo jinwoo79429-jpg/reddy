@@ -1,0 +1,176 @@
+/* Animations from inline Angular styles */
+@keyframes tagmenu {
+  0%   { background: red; color: #fff; }
+  50%  { background: #fff; color: red; }
+  100% { background: #ff0; color: #000; }
+}
+
+.new-tag-menus {
+  animation: tagmenu 2s ease-out infinite;
+  border-radius: 5px;
+}
+
+/* livematch bar - Angular component styles (de-scoped) */
+.livematch {
+  position: absolute !important;
+  left: 0 !important;
+  background-image: url(/assets/images/popular-img.png) !important;
+  align-items: center;
+  top: 55px !important;
+  overflow-x: auto;
+  max-width: 100%;
+}
+
+span.lm_icon {
+  background: #fff;
+  padding: 5px 10px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.lm_datas {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.lm_datas div {
+  display: inline-flex;
+  align-items: center;
+  overflow-x: auto;
+  max-width: 100%;
+  padding: 0 5px;
+  margin: 0 2px;
+  background: #900;
+  border-radius: 8px;
+}
+
+.lm_datas b {
+  text-transform: capitalize;
+  color: #fff;
+  font-weight: 600;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+/* LIVE / VIRTUAL / PREMIUM checkbox filter - Angular component styles (de-scoped) */
+ul.ks-cboxtags {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  float: right;
+  margin: 0 30% 0 0;
+}
+ul.ks-cboxtags li {
+  display: inline;
+}
+ul.ks-cboxtags li label {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--theme-primary-color);
+  color: var(--theme-primary-color);
+  border-radius: 25px;
+  white-space: nowrap;
+  margin: 3px 1px;
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  transition: all .2s;
+  font-weight: 600;
+  padding: 5px 8px;
+  cursor: pointer;
+  font-size: 10px;
+}
+ul.ks-cboxtags li label::before {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-family: bootstrap-icons;
+  font-weight: 400;
+  font-size: 12px;
+  padding-right: 2px;
+  content: "\f4fe";
+  transition: transform .3s ease-in-out;
+}
+ul.ks-cboxtags li input[type=checkbox]:checked + label::before {
+  content: "\f633";
+  transform: rotate(-360deg);
+  transition: transform .3s ease-in-out;
+}
+ul.ks-cboxtags li input[type=checkbox]:checked + label {
+  border: 1px solid #00ad6f;
+  background-color: #00ad6f;
+  color: #fff;
+  transition: all .2s;
+}
+ul.ks-cboxtags li input[type=checkbox] {
+  position: absolute;
+  opacity: 0;
+}
+@media (max-width: 767px) {
+  ul.ks-cboxtags li label { padding: 2px 4px; font-size: 9px; }
+  ul.ks-cboxtags { margin-right: 0; }
+}
+
+/* Casino provider grid - Angular component styles (de-scoped) */
+.casinoprovider-thumb-section {
+  width: 100%;
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-auto-flow: column;
+  overflow-x: scroll;
+  gap: 1px;
+  margin-bottom: 1px;
+  justify-content: space-between;
+  white-space: nowrap;
+}
+.casinoprovider-thumb-section .cts-img {
+  width: 100%;
+}
+@media (max-width: 991px) {
+  .casinoprovider-thumb-section .cts-img { width: 140px; }
+  .cts-img img { height: 90px; }
+}
+
+/* Game slider (custom-thumb-section) - Angular component styles (de-scoped) */
+.custom-thumb-section {
+  display: none;
+}
+@media (max-width: 991px) {
+  .custom-thumb-section {
+    width: 100%;
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-auto-flow: column;
+    overflow-x: scroll;
+    gap: 1px;
+    margin-bottom: 1px;
+    justify-content: space-between;
+    white-space: nowrap;
+  }
+  .custom-thumb-section .cts-img { width: 140px; }
+  .custom-thumb-section .cts-img.popularDiv.hc_div { width: 90px !important; }
+  .custom-thumb-section .cts-img.popularDiv.hc_div img { height: 90px !important; }
+}
+
+/* popularDiv - Angular component styles (de-scoped) */
+.popularDiv {
+  position: relative;
+  margin-bottom: 0;
+}
+
+/* IPL / new launch heading */
+.ipl {
+  display: block;
+  text-align: center;
+  margin-bottom: 1px;
+  padding: 6px;
+  font-size: 16px;
+  background: var(--theme-primary-color);
+  text-transform: uppercase;
+  color: #fff;
+}
