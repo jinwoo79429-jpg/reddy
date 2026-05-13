@@ -5,6 +5,10 @@ export const metadata: Metadata = {
   title: "ReddyBook | India's Most Trusted Online Cricket Betting Id Provider",
   description:
     "Searching for Online Betting Id Then You Came To Right Place. We Are The leading Online Betting Id Platform Get Your Cricket Id in one click.",
+  icons: {
+    icon: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='31.9 30 186.2 200'%3E%3Cpolygon points='125,30 125,30 31.9,63.2 46.1,186.3 125,230 125,230 203.9,186.3 218.1,63.2' fill='%23333333'/%3E%3Cpolygon points='125,30 125,230 203.9,186.3 218.1,63.2' fill='%23000000'/%3E%3Cpath d='M125,52.1L66.8,182.6h21.7l11.7-29.2h49.4l11.7,29.2h21.7L125,52.1z M113.5,136.5l11.5-28.7l11.5,28.7H113.5z' fill='%23ffffff'/%3E%3C/svg%3E",
+    apple: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='31.9 30 186.2 200'%3E%3Cpolygon points='125,30 125,30 31.9,63.2 46.1,186.3 125,230 125,230 203.9,186.3 218.1,63.2' fill='%23333333'/%3E%3Cpolygon points='125,30 125,230 203.9,186.3 218.1,63.2' fill='%23000000'/%3E%3Cpath d='M125,52.1L66.8,182.6h21.7l11.7-29.2h49.4l11.7,29.2h21.7L125,52.1z M113.5,136.5l11.5-28.7l11.5,28.7H113.5z' fill='%23ffffff'/%3E%3C/svg%3E",
+  },
 };
 
 export default function RootLayout({
