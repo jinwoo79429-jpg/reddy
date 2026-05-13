@@ -95,7 +95,7 @@ export default function Sidebar({ menus: _menus, sidebarData, onToggleSidebar }:
                         <ul className="nav-second-level">
                           {comp.matches.map((match: any, mIdx: number) => (
                             <li key={mIdx}>
-                              <a href="javascript:void(0);" className="final-link">
+                              <a href={`/sports/detail/${match.event_id}`} className="final-link">
                                 <span>{match.name}</span>
                               </a>
                             </li>

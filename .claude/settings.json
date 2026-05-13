@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(curl -s -X POST \"https://odd.ocric99.com/ws/getMarketDataNew\" -H \"Content-Type: application/json\" -d \"{\\\\\"market_ids\\\\\":[\\\\\"1.257943042\\\\\",\\\\\"1.257903663\\\\\",\\\\\"1.257765600\\\\\"]}\" -o C:/tmp/odds.json)"
+    ]
+  }
+}

@@ -141,7 +141,7 @@ export default function SportList({ sportId, sportName, events, marketOdds }: Sp
                   <div className="game-box">
                     <div className="game-left-col">
                       <div className="game-name">
-                        <a href="javascript:void(0)">
+                        <a href={`/sports/detail/${ev.event_id}`}>
                           <p className="team-name text-left">{ev.name}{" "}</p>
                           <p className="team-name text-left team-event">({ev.competition_name})</p>
                         </a>

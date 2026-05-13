@@ -5,7 +5,7 @@ import Header from "@/components/Header/Header";
 import Sidebar from "@/components/Sidebar/Sidebar";
 import MiddleNav from "@/components/MiddleNav/MiddleNav";
 import SportList from "@/components/Dashboard/SportList";
-import { fetchMarketOdds } from "@/lib/api";
+import { fetchMarketOdds, POLL_LIST_MS } from "@/lib/api";
 import type { PageData, Event, MarketOdds } from "@/lib/types";
 
 interface SportPageClientProps extends PageData {
@@ -43,7 +43,7 @@ export default function SportPageClient({
       if (!cancelled) setMarketOdds(odds);
     };
     poll();
-    const interval = setInterval(poll, 3000);
+    const interval = setInterval(poll, POLL_LIST_MS);
     return () => { cancelled = true; clearInterval(interval); };
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [marketIds.join(",")]);

@@ -14,7 +14,7 @@ export default function BannerSwiper({ banners }: BannerSwiperProps) {
     const init = () => {
       if (typeof window !== "undefined" && (window as any).Swiper && swiperRef.current) {
         new (window as any).Swiper(swiperRef.current, {
-          loop: true,
+          loop: banners.length > 1,
           autoplay: { delay: 3000, disableOnInteraction: false },
           pagination: { el: ".swiper-pagination", clickable: true },
           slidesPerView: 1,

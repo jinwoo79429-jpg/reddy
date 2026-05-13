@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(curl -s \"https://api.dcric99.com/api/guest/event_list\" -o C:/tmp/events.json)"
+    ]
+  }
+}
