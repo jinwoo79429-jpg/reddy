@@ -1,5 +1,7 @@
 import { MetadataRoute } from 'next'
 
+export const revalidate = 86400
+
 export default function robots(): MetadataRoute.Robots {
   return {
     rules: {
@@ -7,6 +9,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: '/',
       disallow: ['/api/', '/_next/'],
     },
-    sitemap: 'https://reddybooklive.site/sitemap.xml',
+    sitemap: 'https://www.reddybooklive.site/sitemap.xml',
   }
 }
